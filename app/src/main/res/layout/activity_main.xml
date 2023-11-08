@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#656565"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="327dp"
+        android:background="#FFFFFF"
+        android:text="¡Todavía no sé tu nombre!"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="448dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="185dp"
+        android:background="#AE1B1B"
+        android:backgroundTint="#B12222"
+        android:backgroundTintMode="src_in"
+        android:onClick="presion"
+        android:text="Segunda actividad"
+        android:textColor="#F8F4F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:strokeColor="#C60A0A" />
+</androidx.constraintlayout.widget.ConstraintLayout>
